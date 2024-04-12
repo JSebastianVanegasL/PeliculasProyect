@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color:#1514148f;
     border-radius: 80px;  
     color: #fff; 
     padding: 5px;
@@ -62,8 +62,18 @@ main {
 
 
 footer {
-    background-color: #000;
+    background-color: #1514148f;
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+footer i {
+    font-size: 24px; 
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+footer span {
+    margin-left: 20px; 
 }

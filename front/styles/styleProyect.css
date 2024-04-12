@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #000;
+    background-color: #1514148f;
     border-radius: 80px;  
     color: #fff; 
     padding: 5px; 
@@ -58,10 +58,46 @@ main {
     flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
 }
 
+.container-description {
+    border: 2px solid black; 
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px; 
+}
+
+.color-change {
+    animation: changeColor 10s infinite;
+}
+
+@keyframes changeColor {
+    30% { color: greenyellow; }
+    50% { color: violet; }
+    75% { color: orange; }
+    100% { color: white; }
+}
+
+.img-thumbnail {
+    animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+    from { transform: rotate(-2deg); }
+    to { transform: rotate(2deg); }
+}
 
 footer {
-    background-color: #000;
+    background-color: #1514148f;
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+footer i {
+    font-size: 24px; 
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+footer span {
+    margin-left: 20px; 
 }
