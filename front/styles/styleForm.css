@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Fascinate&family=Great+Vibes&family=Joti+One&family=Lobster&family=Spirax&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Train+One&display=swap');
 
 body {
-    background-image: url('../assets/fondo.jpg');
+    background-image: url('../assets/fondo1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Joti One", serif;
@@ -59,7 +59,81 @@ main {
     flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
 }
 
+article{
+    display: flex;
+    width: 600px;
+    height: 430px;
+    justify-content: center; 
+    margin: auto;
+  }
+  
+  article img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  
+  article img:hover{
+    cursor:crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
 
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container {
+    margin-right: 20px;
+  }
+  
+  .image-container img {
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  
+  .form-container {
+    background-color: rgba(0, 0, 0, 0); /* Cambia el último valor (0.8) para ajustar la opacidad */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Cambia este valor para hacer los bordes más redondos */
+    font-size: 14px; /* Cambia este valor para ajustar el tamaño de la fuente */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Añadimos un margen inferior para separar los campos de entrada */
+  }
+  
+button {
+  background-color: #007bff; /* Color de fondo inicial */
+  color: #fff; /* Color de texto */
+  border: none; /* Eliminamos el borde para un estilo más limpio */
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease; /* Agregamos una transición para el cambio de color de fondo, opacidad y transformación */
+  margin-top: 10px; /* Añadimos un margen superior para separar los botones de los campos de entrada */
+}
+
+button:hover {
+  background-color: transparent; /* Cambiamos el color de fondo a transparente al pasar el mouse */
+  opacity: 0.8; /* Cambiamos la opacidad al pasar el mouse */
+  transform: translateY(-3px); /* Desplazamos ligeramente hacia arriba al pasar el mouse */
+}
 
 footer {
     background-color: #1514148f;

@@ -1,9 +1,16 @@
-module.exports ={
-    entry:"./scripts/index.js",
+module.exports={
+    mode:"development",
+    entry:{ 
+        index: './scripts/index.js',
+        films: './scripts/formulario.js',
+        history: './scripts/cardsHistory.js'
+       
+},
 
     output: {
-        path: __dirname + "/public",
-        filename: "bundle.js",
+        path:__dirname + "/public",
+        filename: "[name].js",
 
     },
+
 };

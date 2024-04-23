@@ -1,9 +1,13 @@
 const Cards = require('./renderCards')
+const axios = require('axios')
 
-const getFilms = () =>{
-    $.get(" https://students-api.up.railway.app/movies",(data)=>{
-        Cards(data);
-    }).fail(()=> alert('error al traer las peliculas'))
+const getFilms = async() =>{
+    try {
+        const {data} = await axios.get('http://localhost:3000/movies')
+        Cards(data)
+    } catch (error) {
+        console.error('Error al traer las peliculas', error)
+    }
   
 }
 

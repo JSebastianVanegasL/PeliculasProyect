@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Fascinate&family=Great+Vibes&family=Joti+One&family=Lobster&family=Spirax&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&family=Train+One&display=swap');
 
 body {
-    background-image: url('../assets/fondo.jpg');
+    background-image: url('../assets/fondo1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Joti One", serif;
@@ -55,7 +55,62 @@ body {
 }
 
 main {
-    flex: 1; 
+    flex: 1;
+    margin: 40px 
+}
+
+section {
+    text-align: center;
+    margin-top: 20px; /* Ajusta el margen superior para separar el párrafo de la navbar */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro transparente */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 20px;
+}
+  
+  .tamaño{
+    font-size: 25px;
+  }
+  section p {
+    color: white;
+  }
+
+
+.card {
+  display: inline-block; /* Para colocar las tarjetas en línea horizontalmente */
+  position: relative;
+  margin: 20px;
+  overflow: hidden; /* Ocultar el desbordamiento de contenido */
+  width: 250px; /* Ancho fijo para las tarjetas */
+}
+
+.card img {
+  width: 100%; /* Hacer que la imagen ocupe todo el ancho de la tarjeta */
+  height: 300px; 
+  object-fit: cover; /* Escalar y recortar la imagen para que se ajuste al contenedor */
+  transition: transform 0.3s ease; /* Agregar transición suave para el efecto de gota */
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Escalar la imagen al pasar el mouse */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+  color: white;
+  padding: 10px; /* Espaciado interior */
+  transform: translateY(100%); /* Mover el texto fuera de la vista inicialmente */
+  transition: transform 0.3s ease; /* Agregar transición suave para mostrar el texto */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  font-family: Arial, sans-serif; /* Fuente diferente */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+.card:hover .overlay {
+  transform: translateY(0); /* Mostrar el texto al pasar el mouse */
 }
 
 
